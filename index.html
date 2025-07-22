@@ -3,95 +3,77 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>YOUR NAME - Portfolio</title>
+  <title>Girish Nana Deore | Portfolio</title>
+  <meta name="description" content="Portfolio of Girish Nana Deore - Aspiring Software Developer, MCA Graduate, Java & Web Development." />
   <style>
     :root {
-      --accent: #007acc;
-      --accent-lite: #e6f4ff;
-      --text: #222;
-      --bg: #fff;
-      --max-width: 900px;
+      --accent: #0052cc;
+      --accent-lite: #e8f0ff;
+      --bg: #ffffff;
+      --text: #1a1a1a;
+      --maxw: 900px;
       --radius: 12px;
     }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.5;
-      color: var(--text);
-      background: var(--bg);
-    }
-    header {
-      background: var(--accent);
-      color: #fff;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    header img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid #fff;
-      margin-bottom: 1rem;
-    }
-    main { max-width: var(--max-width); margin: 0 auto; padding: 1rem; }
-    section { margin-bottom: 3rem; }
-    h1, h2, h3 { margin-top: 0; }
-    .tagline { font-size: 1.25rem; font-weight: 600; margin-top: 0.5rem; }
-    ul { padding-left: 1.25rem; }
-    .card-grid {
-      display: grid;
-      gap: 1rem;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-    .project-card {
-      border: 1px solid #ddd;
-      border-radius: var(--radius);
-      padding: 1rem;
-      background: var(--accent-lite);
-    }
-    .project-card h3 { margin-top: 0; }
-    .contact-links a {
-      display: inline-block;
-      margin-right: 1rem;
-      text-decoration: none;
-      color: var(--accent);
-      font-weight: bold;
-    }
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      padding: 2rem 1rem;
-      border-top: 1px solid #eee;
-      color: #666;
-    }
+    *{box-sizing:border-box;}
+    html,body{margin:0;padding:0;font-family:Arial,Helvetica,sans-serif;line-height:1.5;color:var(--text);background:var(--bg);}    
+    img{max-width:100%;height:auto;}
+    a{color:var(--accent);text-decoration:none;}
+    a:hover{text-decoration:underline;}
+    header{background:var(--accent);color:#fff;text-align:center;padding:3rem 1rem;}
+    header img{width:140px;height:140px;border-radius:50%;object-fit:cover;border:4px solid #fff;margin-bottom:1rem;}
+    nav{margin-top:1rem;}
+    nav a{color:#fff;margin:0 .75rem;font-weight:bold;}
+    main{max-width:var(--maxw);margin:0 auto;padding:2rem 1rem;}
+    section{margin-bottom:4rem;}
+    h1,h2,h3{margin-top:0;}
+    .tagline{font-size:1.2rem;font-weight:600;margin:0.5rem 0 0;}
+    ul{padding-left:1.25rem;}
+    .skills-list{columns:2;max-width:500px;margin:1rem auto 0;padding-left:1.25rem;}
+    .card-grid{display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));}
+    .project-card{background:var(--accent-lite);padding:1.25rem;border-radius:var(--radius);border:1px solid #d0d8ff;text-align:left;}
+    .project-card h3{margin-top:0;}
+    .edu-item{margin-bottom:1.25rem;}
+    .cert-list li{margin-bottom:.5rem;}
+    .contact-links a{display:inline-block;margin-right:1rem;font-weight:bold;}
+    footer{text-align:center;padding:2rem 1rem;font-size:.9rem;border-top:1px solid #eee;color:#666;}
+    @media (max-width:480px){.skills-list{columns:1;}}
   </style>
 </head>
 <body>
   <header>
-    <!-- Replace placeholder.jpg after uploading your own image -->
-    <img src="placeholder.jpg" alt="Your photo" />
-    <h1>YOUR NAME</h1>
-    <p class="tagline">YOUR SHORT TAGLINE (e.g., Full-Stack Developer | Java | Web Apps)</p>
+    <!-- TODO: upload a square photo to repo (e.g., photo.jpg) and update src -->
+    <img src="photo.jpg" alt="Photo of Girish Nana Deore" />
+    <h1>Girish Nana Deore</h1>
+    <p class="tagline">Aspiring Software Developer | MCA Graduate | Java & Web Development</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#certs">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <main>
     <!-- About -->
     <section id="about">
       <h2>About Me</h2>
-      <p>Hello! I'm YOUR NAME. I enjoy building web applications that solve real-life problems. I have experience in Java, Spring Boot, databases, and front-end development. I love learning new technologies and sharing what I learn.</p>
+      <p>I am an MCA graduate and aspiring software developer with a strong foundation in Java, C#, and full-stack web development (HTML, CSS, JavaScript, PHP, SQL, MySQL). I enjoy solving real-life problems through software and continuously learning new technologies to build scalable, high-quality solutions.</p>
     </section>
 
     <!-- Skills -->
     <section id="skills">
       <h2>Skills</h2>
-      <ul>
-        <li>Java & Spring Boot</li>
-        <li>HTML, CSS, JavaScript</li>
-        <li>MongoDB, MySQL</li>
-        <li>React.js Basics</li>
-        <li>Git & GitHub</li>
+      <ul class="skills-list">
+        <li>Java</li>
+        <li>C#</li>
+        <li>HTML / CSS</li>
+        <li>JavaScript</li>
+        <li>PHP</li>
+        <li>SQL / MySQL</li>
+        <li>Git</li>
+        <li>DevOps Basics</li>
       </ul>
     </section>
 
@@ -101,45 +83,85 @@
       <div class="card-grid">
         <article class="project-card">
           <h3>Police Duty Allocation System</h3>
-          <p>A web app to help plan and manage police duty schedules and record accident info.</p>
-          <p><a href="https://github.com/YOURUSERNAME/police-duty-app" target="_blank">View Code</a></p>
-        </article>
-        <article class="project-card">
-          <h3>Olympics Data Analysis App</h3>
-          <p>Interactive dashboard built with Python & Streamlit exploring Olympic stats.</p>
-          <p><a href="https://github.com/YOURUSERNAME/olympics-dashboard" target="_blank">View Code</a></p>
+          <p>Web application to schedule and manage police duty assignments; includes accident record tracking. Built with HTML, CSS, JavaScript, PHP, MySQL.</p>
+          <!-- TODO: update with your repo link -->
+          <p><a href="#" target="_blank">View Code</a></p>
         </article>
         <article class="project-card">
           <h3>Employee Payroll System</h3>
-          <p>Manages employee info, salary, and reports.</p>
-          <p><a href="https://github.com/YOURUSERNAME/payroll" target="_blank">View Code</a></p>
+          <p>Core Java + MySQL solution to manage employee data, salary computation, and user role access.</p>
+          <p><a href="#" target="_blank">View Code</a></p>
+        </article>
+        <article class="project-card">
+          <h3>Gram Panchayat Management System</h3>
+          <p>Helps streamline local administrative processes using a PHP + MySQL backend with web UI (HTML/CSS/JS).</p>
+          <p><a href="#" target="_blank">View Code</a></p>
+        </article>
+        <article class="project-card">
+          <h3>Quiz Application</h3>
+          <p>Interactive assessment tool built using Java Swing.</p>
+          <p><a href="#" target="_blank">View Code</a></p>
         </article>
       </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <h2>Education</h2>
+      <div class="edu-item">
+        <h3>MCA – ATSS Institute of Industrial & Computer Management and Research, Pune</h3>
+        <p>Oct 2022 – Jul 2024 • Percentage: 72.93%</p>
+      </div>
+      <div class="edu-item">
+        <h3>BCA – Jai Hind Educational Trusts Zulal Bhilajirao Patil College, Dhule</h3>
+        <p>Jun 2019 – Jul 2022 • Percentage: 78.76%</p>
+      </div>
+      <div class="edu-item">
+        <h3>HSC – Jai Hind Educational Trusts Zulal Bhilajirao Patil College, Dhule</h3>
+        <p>Jun 2018 – May 2019 • Percentage: 60.31%</p>
+      </div>
+      <div class="edu-item">
+        <h3>SSC – Chavara English Public School</h3>
+        <p>Jun 2016 – Jun 2017 • Percentage: 87.20%</p>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certs">
+      <h2>Certifications</h2>
+      <ul class="cert-list">
+        <li>AWS Cloud Foundation Badge</li>
+        <li>Accenture Data Analytics & Visualization (Forage)</li>
+        <li>Accenture Software Engineering Job Simulation (Forage)</li>
+        <li>TCS iON Career Edge – Young Professional</li>
+      </ul>
     </section>
 
     <!-- Resume -->
     <section id="resume">
       <h2>Resume</h2>
-      <p><a href="resume.pdf" target="_blank">Download my Resume (PDF)</a></p>
+      <!-- TODO: upload your PDF resume as resume.pdf in repo root -->
+      <p><a href="resume.pdf" target="_blank">Download My Resume (PDF)</a></p>
     </section>
 
     <!-- Contact -->
     <section id="contact">
       <h2>Contact</h2>
+      <p>Feel free to reach out for collaboration, job opportunities, or just to say hi!</p>
       <div class="contact-links">
-        <a href="mailto:youremail@example.com">Email</a>
-        <a href="https://www.linkedin.com/in/YOURPROFILE/" target="_blank">LinkedIn</a>
-        <a href="https://github.com/YOURUSERNAME" target="_blank">GitHub</a>
+        <a href="mailto:girishdeore07@gmail.com">Email</a>
+        <!-- TODO: replace with your actual LinkedIn URL -->
+        <a href="https://www.linkedin.com/in/girish-deore-b78628224" target="_blank">LinkedIn</a>
+        <a href="https://github.com/girishdeoregithub" target="_blank">GitHub</a>
       </div>
     </section>
   </main>
 
   <footer>
-    © <span id="year"></span> YOUR NAME. All rights reserved.
+    © <span id="year"></span> Girish Nana Deore. All rights reserved.
   </footer>
 
   <script>
-    // Auto-update year in footer
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
