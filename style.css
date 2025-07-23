@@ -245,8 +245,17 @@ section h2 {
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  cursor: pointer;
 }
+
+#skills ul li:hover {
+  transform: translateY(-5px) scale(1.05);
+  background: #f7931e;
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
 
 #skills ul li:hover {
   transform: translateY(-5px);
@@ -334,5 +343,9 @@ section h2 {
     width: 75%;    /* Resize for smaller screens */
     max-width: 250px;
   }
+}
+
+a, .btn-primary, .btn-outline {
+  transition: all 0.3s ease;
 }
 
