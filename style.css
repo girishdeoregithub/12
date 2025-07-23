@@ -59,6 +59,28 @@ a {
 .nav-links li a:hover {
   color: #f7931e;
 }
+//44444
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 5%;
+    flex-wrap: wrap; /* Allow elements to move to next line if needed */
+  }
+
+  .nav-links {
+    gap: 10px;  /* Reduce spacing between menu items */
+    flex-wrap: wrap; /* Make links wrap to next line if needed */
+  }
+
+  .nav-links li a {
+    font-size: 0.9rem; /* Smaller text on mobile */
+  }
+
+  .small-btn {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+}
+//yyyyyy
 
 .small-btn {
   background: #f7931e;
