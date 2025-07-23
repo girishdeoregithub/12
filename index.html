@@ -24,7 +24,7 @@
   </nav>
 
   <!-- HERO SECTION -->
-  <header id="home" class="hero">
+  <header id="home" >
     <div class="hero-content">
       <h4 class="welcome">WELCOME TO MY WORLD</h4>
       <h1>Hey, I'm <span class="highlight">Girish Deore</span><br>Full-Stack Developer.</h1>
@@ -43,7 +43,7 @@
   </header>
 
   <!-- ABOUT SECTION -->
-  <section id="about" class="fade-in">
+  <section id="about" >
     <h2>About Me</h2>
     <p>
       I am an MCA graduate from IICMR College, specializing in Java and web development. I enjoy solving problems,
@@ -52,7 +52,7 @@
   </section>
 
   <!-- SKILLS SECTION -->
-  <section id="skills" class="fade-in">
+  <section id="skills" >
     <h2>Skills</h2>
     <ul>
       <li>Java & Spring Boot</li>
@@ -66,7 +66,7 @@
 
   <!-- PROJECTS SECTION -->
   <!-- PROJECTS SECTION -->
-<section id="projects" class="fade-in">
+<section id="projects" >
   <h2>Projects</h2>
   <div class="project-grid">
     <div class="project-card">
@@ -90,14 +90,14 @@
 
 
   <!-- RESUME SECTION -->
-  <section id="resume" class="fade-in">
+  <section id="resume">
     <h2>Resume</h2>
     <p>You can download my latest resume here:</p>
     <a href="Girish-Nana-Deore-Resume.pdf" class="btn-primary" target="_blank">Download Resume</a>
   </section>
 
   <!-- CONTACT SECTION -->
-  <section id="contact" class="fade-in">
+  <section id="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:girishdeore07@gmail.com">girishdeore07@gmail.com</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/girish-deore-b78628224/" target="_blank">linkedin.com/in/girish-deore</a></p>
@@ -113,25 +113,7 @@
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 
-  <script>
-  // Reveal elements on scroll
-  const fadeElems = document.querySelectorAll('.fade-in');
 
-  function checkVisibility() {
-    const triggerBottom = window.innerHeight * 0.9;
-    fadeElems.forEach(elem => {
-      const elemTop = elem.getBoundingClientRect().top;
-      if (elemTop < triggerBottom) {
-        elem.classList.add('visible');
-      } else {
-        elem.classList.remove('visible');
-      }
-    });
-  }
-
-  window.addEventListener('scroll', checkVisibility);
-  window.addEventListener('load', checkVisibility);
-</script>
 
 </body>
 </html>
