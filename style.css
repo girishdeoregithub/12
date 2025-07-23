@@ -97,12 +97,14 @@ body {
 }
 
 .right-panel img {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover; /* Ensures the photo fits properly */
+  border-radius: 8px; /* Slight rounded corners, not fully circular */
   border: 4px solid white;
   margin-bottom: 20px;
 }
+
 
 .right-panel .section {
   text-align: left;
