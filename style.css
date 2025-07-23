@@ -203,7 +203,7 @@ a {
 /* SECTION STYLES */
 section {
   padding: 60px 10%;
-  background: #fff;
+  background: #e2dcdb;
 }
 
 section:nth-child(even) {
