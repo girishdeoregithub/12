@@ -371,3 +371,8 @@ a, .btn-primary, .btn-outline {
   transition: all 0.3s ease;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+
