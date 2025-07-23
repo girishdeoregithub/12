@@ -303,4 +303,30 @@ section h2 {
   background: #d87c15;
 }
 
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    justify-content: center;  /* Center content vertically */
+    align-items: center;      /* Center content horizontally */
+    text-align: center;
+    padding: 40px 5%;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;  /* Center image */
+    margin-top: 20px;
+  }
+
+  .hero-image img {
+    margin: 0 auto;
+    width: 75%;    /* Resize for smaller screens */
+    max-width: 250px;
+  }
+}
 
