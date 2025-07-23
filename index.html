@@ -27,7 +27,10 @@
     <div class="hero-content">
       <h4 class="welcome">WELCOME TO MY WORLD</h4>
       <h1>Hey, I'm <span class="highlight">Girish Deore</span><br>Full-Stack Developer.</h1>
-      <p>I build modern web applications using Java, Spring Boot, and frontend technologies. Passionate about creating responsive and user-friendly solutions.</p>
+      <p>
+        I build modern web applications using Java, Spring Boot, and frontend technologies.
+        Passionate about creating responsive and user-friendly solutions.
+      </p>
       <div class="hero-buttons">
         <a href="#contact" class="btn-primary">Hire Me Now</a>
         <a href="#contact" class="btn-outline">Let's Chat</a>
@@ -38,6 +41,61 @@
     </div>
   </header>
 
-  <!-- SECTIONS WILL COME HERE -->
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am an MCA graduate from IICMR College, specializing in Java and web development. I enjoy solving problems,
+      building modern web apps, and exploring new technologies.
+    </p>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Java & Spring Boot</li>
+      <li>HTML, CSS, JavaScript</li>
+      <li>React Basics</li>
+      <li>SQL / MySQL</li>
+      <li>Git & GitHub</li>
+      <li>C# (OOP concepts)</li>
+    </ul>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><b>Police Duty Allocation System:</b> Web app for scheduling and managing police duty assignments.</li>
+      <li><b>Employee Payroll System:</b> Core Java + MySQL application for managing employee data and payroll.</li>
+      <li><b>Olympics Data Analysis Web App:</b> Python + Streamlit dashboard for analyzing Olympic stats.</li>
+      <li><b>Quiz Application:</b> Interactive Java-based quiz app.</li>
+    </ul>
+  </section>
+
+  <!-- RESUME SECTION -->
+  <section id="resume">
+    <h2>Resume</h2>
+    <p>You can download my latest resume here:</p>
+    <a href="Girish-Nana-Deore-Resume.pdf" class="btn-primary" target="_blank">Download Resume</a>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:girishdeore07@gmail.com">girishdeore07@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/girish-deore-b78628224/" target="_blank">linkedin.com/in/girish-deore</a></p>
+    <p>GitHub: <a href="https://github.com/girishdeoregithub" target="_blank">github.com/girishdeoregithub</a></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © <span id="year"></span> Girish Nana Deore. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
