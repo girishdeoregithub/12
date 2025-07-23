@@ -1,136 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Girish Nana Deore - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --accent: #007acc;
-      --accent-lite: #e6f4ff;
-      --text: #222;
-      --bg: #fff;
-      --max-width: 900px;
-      --radius: 12px;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.5;
-      color: var(--text);
-      background: var(--bg);
-    }
-    header {
-      background: var(--accent);
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Poppins', sans-serif; color: #333; }
+    a { color: inherit; text-decoration: none; }
+
+    /* Layout */
+    .container { display: flex; flex-wrap: wrap; }
+    .sidebar {
+      background: #f7931e;
+      width: 25%;
+      min-width: 250px;
       color: #fff;
-      padding: 2rem 1rem;
+      padding: 20px;
       text-align: center;
     }
-    header img {
-      width: 120px;
-      height: 120px;
+    .main-content {
+      width: 75%;
+      background: #fff;
+    }
+
+    /* Sidebar */
+    .sidebar img {
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
-      object-fit: cover;
       border: 4px solid #fff;
-      margin-bottom: 1rem;
+      margin-bottom: 20px;
     }
-    main { max-width: var(--max-width); margin: 0 auto; padding: 1rem; }
-    section { margin-bottom: 3rem; }
-    h1, h2, h3 { margin-top: 0; }
-    .tagline { font-size: 1.25rem; font-weight: 600; margin-top: 0.5rem; }
-    ul { padding-left: 1.25rem; }
-    .card-grid {
-      display: grid;
-      gap: 1rem;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    .sidebar h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
     }
-    .project-card {
-      border: 1px solid #ddd;
-      border-radius: var(--radius);
-      padding: 1rem;
-      background: var(--accent-lite);
+    .sidebar p { font-size: 0.95rem; margin-bottom: 20px; }
+    .sidebar h3 { font-size: 1.2rem; margin: 20px 0 10px; text-align: left; }
+    .sidebar ul { list-style: none; text-align: left; padding: 0; }
+    .sidebar ul li {
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
     }
-    .project-card h3 { margin-top: 0; }
-    .contact-links a {
-      display: inline-block;
-      margin-right: 1rem;
-      text-decoration: none;
-      color: var(--accent);
-      font-weight: bold;
+    .sidebar ul li span { margin-left: 8px; }
+
+    /* Main Content */
+    header {
+      background: #2c2c2c;
+      color: #fff;
+      padding: 30px 20px;
     }
+    header h1 {
+      font-size: 2rem;
+      color: #f7931e;
+    }
+    header h4 { font-size: 1rem; font-weight: 400; margin-top: 5px; }
+    header p { margin-top: 10px; font-size: 0.95rem; }
+
+    section {
+      padding: 20px;
+      border-bottom: 1px solid #ddd;
+    }
+    section h2 {
+      font-size: 1.4rem;
+      color: #2c2c2c;
+      margin-bottom: 10px;
+    }
+    .two-column {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .two-column > div { flex: 1; min-width: 200px; }
+
+    /* Work Experience / Skills */
+    .experience-item {
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      background: #eee;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    .skill-bar {
+      height: 8px;
+      background: #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+      margin: 5px 0 10px;
+    }
+    .skill-bar div {
+      height: 8px;
+      background: #f7931e;
+    }
+
     footer {
       text-align: center;
-      font-size: 0.9rem;
-      padding: 2rem 1rem;
-      border-top: 1px solid #eee;
+      font-size: 0.8rem;
       color: #666;
+      padding: 15px;
+    }
+
+    @media (max-width: 768px) {
+      .sidebar, .main-content { width: 100%; }
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="photo.jpeg" alt="Your photo" />
-    <h1>Girish Nana Deore</h1>
-    <p class="tagline">Full-Stack Developer | Java & Web Apps</p>
-  </header>
-
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Hello! I'm Girish Nana Deore. I enjoy building web applications that solve real-life problems. I have experience in Java, Spring Boot, databases, and front-end development.</p>
-    </section>
-
-    <section id="skills">
-      <h2>Skills</h2>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <img src="photo.jpg" alt="Girish Nana Deore">
+      <h2>Girish Deore</h2>
+      <p>Full-Stack Developer</p>
+      <h3>Contact</h3>
       <ul>
-        <li>Java & Spring Boot</li>
-        <li>HTML, CSS, JavaScript</li>
-        <li>MongoDB, MySQL</li>
-        <li>React.js Basics</li>
-        <li>Git & GitHub</li>
+        <li>📍 <span>Pune, India</span></li>
+        <li>📞 <span>+91-XXXXXXXXXX</span></li>
+        <li>✉ <span>girishdeore07@gmail.com</span></li>
       </ul>
-    </section>
+      <h3>Interests</h3>
+      <ul>
+        <li>🎵 <span>Music</span></li>
+        <li>✍ <span>Writing</span></li>
+        <li>♟ <span>Chess</span></li>
+        <li>✈ <span>Travel</span></li>
+      </ul>
+    </aside>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="card-grid">
-        <article class="project-card">
-          <h3>Police Duty Allocation System</h3>
-          <p>A web app to help plan and manage police duty schedules and record accident info.</p>
-          <p><a href="#">View Code</a></p>
-        </article>
-        <article class="project-card">
-          <h3>Olympics Data Analysis App</h3>
-          <p>Interactive dashboard built with Python & Streamlit exploring Olympic stats.</p>
-          <p><a href="#">View Code</a></p>
-        </article>
-        <article class="project-card">
-          <h3>Employee Payroll System</h3>
-          <p>Manages employee info, salary, and reports.</p>
-          <p><a href="#">View Code</a></p>
-        </article>
-      </div>
-    </section>
+    <!-- Main Content -->
+    <div class="main-content">
+      <header>
+        <h1>Girish Deore</h1>
+        <h4>Profile</h4>
+        <p>A brief summary of my background, qualifications, and experience.</p>
+      </header>
 
-    <section id="resume">
-      <h2>Resume</h2>
-      <p><a href="resume.pdf" target="_blank">Download my Resume (PDF)</a></p>
-    </section>
+      <section>
+        <div class="two-column">
+          <div>
+            <h2>Education</h2>
+            <p>MCA - IICMR College (2022-2024)</p>
+            <p>BCA - JH College (2019-2022)</p>
+          </div>
+          <div>
+            <h2>Personality</h2>
+            <p><b>Creative Developer:</b> Innovative and detail-oriented.</p>
+            <p><b>Problem Solver:</b> Loves challenges and new tech.</p>
+          </div>
+        </div>
+      </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <div class="contact-links">
-        <a href="mailto:girishdeore07@gmail.com">Email</a>
-        <a href="https://www.linkedin.com/in/girish-deore-b78628224/" target="_blank">LinkedIn</a>
-        <a href="https://github.com/girishdeoregithub" target="_blank">GitHub</a>
-      </div>
-    </section>
-  </main>
+      <section>
+        <div class="two-column">
+          <div>
+            <h2>Work Experience</h2>
+            <div class="experience-item">
+              <span>2023 - Present</span>
+              <span>Internship at XYZ</span>
+            </div>
+            <div class="experience-item">
+              <span>2022 - 2023</span>
+              <span>Freelance Projects</span>
+            </div>
+          </div>
+          <div>
+            <h2>Expertise</h2>
+            <p>Java</p>
+            <div class="skill-bar"><div style="width: 90%;"></div></div>
+            <p>Web Development</p>
+            <div class="skill-bar"><div style="width: 85%;"></div></div>
+            <p>SQL/MySQL</p>
+            <div class="skill-bar"><div style="width: 80%;"></div></div>
+          </div>
+        </div>
+      </section>
 
-  <footer>
-    © <span id="year"></span> Girish Nana Deore. All rights reserved.
-  </footer>
+      <footer>
+        © <span id="year"></span> Girish Nana Deore. All rights reserved.
+      </footer>
+    </div>
+  </div>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
