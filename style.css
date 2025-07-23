@@ -84,6 +84,16 @@ a {
   flex-wrap: wrap;
 }
 
+.hero-image img {
+  width: 320px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;  /* Ensures center alignment */
+}
+
+
 .hero-content {
   max-width: 500px;
 }
