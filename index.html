@@ -112,5 +112,26 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+
+  <script>
+  // Reveal elements on scroll
+  const fadeElems = document.querySelectorAll('.fade-in');
+
+  function checkVisibility() {
+    const triggerBottom = window.innerHeight * 0.9;
+    fadeElems.forEach(elem => {
+      const elemTop = elem.getBoundingClientRect().top;
+      if (elemTop < triggerBottom) {
+        elem.classList.add('visible');
+      } else {
+        elem.classList.remove('visible');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', checkVisibility);
+  window.addEventListener('load', checkVisibility);
+</script>
+
 </body>
 </html>
